@@ -10,17 +10,17 @@ export const MenuLinks = [
   {
     id: 1,
     name: "Home",
-    link: "/",
+    link: "/",  // Add the base path prefix here
   },
   {
     id: 2,
     name: "Our Services",
-    link: "/services",
+    link: "/services",  // Add the base path prefix here
   },
   {
     id: 3,
     name: "Career",
-    link: "/career",
+    link: "/career",  // Add the base path prefix here
   },
 ];
 
@@ -35,7 +35,7 @@ const Navbar = ({ theme, setTheme }) => {
   const location = useLocation(); // Get current path
 
   const handleLogoClick = () => {
-    navigate("/"); // Navigate to the home page (root path)
+    navigate("/"); // Navigate to the home page (root path with base path)
   };
 
   return (

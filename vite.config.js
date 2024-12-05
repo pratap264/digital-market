@@ -4,10 +4,10 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   build: {
-    sourcemap: true
+    sourcemap: true,
   },
   server: {
-    open: true
-  }
+    open: true,
+  },
+  base: '/digital-market/',
 });
-
